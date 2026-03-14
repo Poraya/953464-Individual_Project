@@ -17,6 +17,13 @@ class ProfileService {
   ];
 }
 
+ /// Reels — เปลี่ยน path ให้ตรงกับ thumbnail ของวิดีโอใน assets ครับ
+  List<String> getReels() {
+    return [
+      "assets/6.MOV",
+      "assets/7.MOV",
+    ];
+  }
   List<Highlight> getHighlights() {
     return [
       Highlight(title: "I", imageUrl: "assets/IMG_7807.JPG"),
