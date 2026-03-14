@@ -143,12 +143,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   ProfileStat(count: "19", label: "posts"),
                                   SizedBox(width: 30),
                                   ProfileStat(
-                                    count: "1,700",
+                                    count: "17k",
                                     label: "followers",
                                   ),
                                   SizedBox(width: 30),
                                   ProfileStat(
-                                    count: "1,654",
+                                    count: "16k",
                                     label: "following",
                                   ),
                                 ],

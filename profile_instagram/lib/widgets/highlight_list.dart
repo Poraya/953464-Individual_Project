@@ -55,7 +55,7 @@ class HighlightList extends StatelessWidget {
               onTap: () {},
               child: Column(
                 children: [
-                  // [แก้] เพิ่ม Container + border สีเทาบางๆ รอบ CircleAvatar ตาม IG จริง
+                  
                   Container(
                     width: 64,
                     height: 64,
@@ -66,7 +66,7 @@ class HighlightList extends StatelessWidget {
                         width: 1,
                       ),
                     ),
-                    // [แก้] padding 2px เพื่อให้รูปไม่ชนขอบ border
+              
                     padding: const EdgeInsets.all(2),
                     child: CircleAvatar(
                       radius: 30,
@@ -74,7 +74,7 @@ class HighlightList extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 6),
-                  // [แก้] จำกัดความกว้าง label + ellipsis กันข้อความล้น
+
                   SizedBox(
                     width: 64,
                     child: Text(

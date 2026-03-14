@@ -19,7 +19,6 @@ class ProfileService {
 
   List<Highlight> getHighlights() {
     return [
-      Highlight(title: "New", imageUrl: ""),
       Highlight(title: "I", imageUrl: "https://picsum.photos/100?12"),
       Highlight(title: "love", imageUrl: "https://picsum.photos/100?13"),
       Highlight(title: "Aj.", imageUrl: "https://picsum.photos/100?14"),
