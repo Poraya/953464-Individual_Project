@@ -13,16 +13,14 @@ class HighlightList extends StatelessWidget {
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         shrinkWrap: true,
-        // [แก้] +1 สำหรับ "New" item แรกสุด ตาม IG จริง
+
         itemCount: highlights.length + 1,
         itemBuilder: (context, index) {
-          // [เพิ่ม] index 0 = ปุ่ม "New" เสมอ
           if (index == 0) {
             return const Padding(
               padding: EdgeInsets.symmetric(horizontal: 8),
               child: Column(
                 children: [
-                  // วงกลมเปล่า + border สีเทา + icon "+"
                   SizedBox(
                     width: 64,
                     height: 64,
@@ -46,7 +44,6 @@ class HighlightList extends StatelessWidget {
             );
           }
 
-          // highlight items ปกติ (index - 1 เพราะเลื่อนให้ "New" อยู่หน้า)
           final h = highlights[index - 1];
 
           return Padding(
@@ -55,7 +52,6 @@ class HighlightList extends StatelessWidget {
               onTap: () {},
               child: Column(
                 children: [
-                  
                   Container(
                     width: 64,
                     height: 64,
@@ -66,7 +62,7 @@ class HighlightList extends StatelessWidget {
                         width: 1,
                       ),
                     ),
-              
+
                     padding: const EdgeInsets.all(2),
                     child: CircleAvatar(
                       radius: 30,
